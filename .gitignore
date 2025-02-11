@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+.env
+.env.local
+.env.development
+.env.production
+
+# Vite
+.vite/
+.vitepress/cache/
+*.cache
+*.log
+
+# Build
+build/
+out/
+.temp/
+.cache/
+*.bak
+
+# Editor (VSCode)
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# MongoDB
+dump/
+*.lock
+*.pid
+
+# Logs
+logs/
+*.log
+logs/**/*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
