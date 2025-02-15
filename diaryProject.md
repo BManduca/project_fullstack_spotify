@@ -199,3 +199,16 @@ banner={currentObject.banner}
     - Alternativa ao useState, útil para gerenciar estados mais complexos
   - useMemo e useCallback
     - Otimizam performance evitando cálculos/re-renderizações desnecessárias
+
+## API
+
+- Application Programming Interface
+  - sistema utilizado para comunicação de duas ou mais entidades
+
+## CRUD (Create, Read, Update and Delete)
+
+- Create: Criar um dado em um DB
+- Read: Ler um dado em um DB
+- Update: Atualizar um dado em um DB
+- Delete: Deletar um dado em um DB
+- Requisições: Post, Get, Put and Delete.
