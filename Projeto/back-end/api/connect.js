@@ -12,4 +12,4 @@ export const db = client.db("spotifyDB")
 // aplicando um find em todos, por isso o objeto vazio
 // const songCollection = await db.collection("songs").find({}).toArray()
 
-// console.log(songCollection)
+// console.log(db)

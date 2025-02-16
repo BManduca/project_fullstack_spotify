@@ -2,6 +2,7 @@
 // sistema utilizado para comunicação de duas ou mais entidades
 
 import express from 'express';
+import cors from 'cors';
 import { db } from './connect.js';
 
 // trazendo todo o 'poder' que o express tem
@@ -9,6 +10,8 @@ import { db } from './connect.js';
 // e assim iremos gerenciar toda a nossa api
 const app = express();
 const PORT = 3001;
+
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send('Home...')

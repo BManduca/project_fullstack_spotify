@@ -9,7 +9,7 @@ export const Artist = () => {
   const { id } = useParams();
 
   const { name, banner } = artistArray.filter(
-    (currentArtistObj) => currentArtistObj.id === Number(id)
+    (currentArtistObj) => currentArtistObj._id === id
   )[0];
 
   const songsArrayFromArtist = songsArray.filter(
@@ -20,7 +20,7 @@ export const Artist = () => {
     Math.random() * (songsArrayFromArtist.length - 1)
   );
 
-  const randomIdFromArtist = songsArrayFromArtist[randomIndex].id;
+  const randomIdFromArtist = songsArrayFromArtist[randomIndex]._id;
 
   return (
     <div className="artist">
