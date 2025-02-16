@@ -212,3 +212,30 @@ banner={currentObject.banner}
 - Update: Atualizar um dado em um DB
 - Delete: Deletar um dado em um DB
 - Requisições: Post, Get, Put and Delete.
+
+## Requisições Fetch e Axios
+
+- Existem duas grande formas de fazer essas requisições: Fetch e Axios,
+  ambas são usadas para fazer requisições HTTP em aplicações JS, mas existem diferenças
+  importantes entre elas:
+
+  - Fetch: Uma API nativa do JS usada para fazer requisições de forma assícrona
+
+    - ✅ Já vem embutido no JS, sem necessidade de instalação
+    - ✅ Suporta Promises de forma nativa
+    - ✅ Permite manipulação da resposta com Response e Headers
+    - 🚨 Não trata automaticamente os erros de resposta HTTP (404 ou 500)
+    - 🚨 Trabalha com Response e precisa converter os dados manualmente (ex.: .json())
+
+  - Axios: Uma biblioteca popular que simplifica requisições HTTP e oferece mais funconalidades que o fetch
+    - Instalação: npm i axios
+    - ✅ Retorna a resposta convertida em JSON
+    - ✅ Lança erro automaticamente para respostas HTTP erradas (404, 500, etc...)
+    - ✅ Suporte a cancelamento de requisições (AbortController)
+    - ✅ Permite definir timeouts e cabeçalhos personalizados de forma mais simples
+    - ✅ Suporte nativo para interceptores (útil para autenticação, logging, etc...)
+    - 🚨 Precisa ser instalado separadamente
+
+## useEffect
+
+- hook do React que permite executar efeitos colaterais em componentes funcionais. Ele substitui os métodos de ciclo de vida como componentDidMount, componentDidUpdate e componentWillUnmount em componentes de classe
