@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const { NODE_ENV } = process.env;
-const URL = "https://projectfullstackspotify-mand.onrender.com/api";
+const URL = "http://localhost:3001/api";
 
 const responseArtists = await axios.get(`${URL}/artists`)
 const responseSongs = await axios.get(`${URL}/songs`)

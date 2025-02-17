@@ -45,7 +45,6 @@ export const Player = ({
   const functionPlayPause = () => {
     isPlaying ? audioPlayer.current.pause() : audioPlayer.current.play();
     setIsPlaying(!isPlaying);
-    setCurrentTime(formatTime(audioPlayer.current.currentTime));
   };
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
